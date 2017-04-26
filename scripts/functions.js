@@ -42,7 +42,7 @@ function populateOrgLinks(organizations) {
 	}
 }
 
-function isResultsFound(isHidden) {
+function onResultsFound(isHidden) {
 	var label = document.getElementById("no_results");
 	if (isHidden) {
 		label.style.visibility = "hidden";
@@ -58,9 +58,10 @@ function filterOrganizationsByKeyword(query) {
 	ALL_ORGANIZATIONS.forEach(function(organization){
 		var numKeywordsMatched = 0;
 		organization["keywords"].forEach(function(keyword){
+			query = query.toLowerCase();
+			keyword = keyword.toLowerCase();
 			if (query.indexOf(keyword) >= 0 || keyword.indexOf(query) >= 0){
 				numKeywordsMatched += 1;
-				console.log("hell yeah " + keyword + " " + query);
 			}
 		});
 		filterResults.push({
@@ -75,10 +76,10 @@ function filterOrganizationsByKeyword(query) {
 
 	if (filterResults.length === 0) {
 		clearOrgLinks();
-		isResultsFound(false);
+		onResultsFound(false);
 	}
 	else {
-		isResultsFound(true);
+		onResultsFound(true);
 		var sortedResults = filterResults.sort(function(a, b){
 			return b["matches"] - a["matches"];
 		});

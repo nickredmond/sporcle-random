@@ -34,6 +34,61 @@ var ALL_ORGANIZATIONS = [
 		"donation_url": "https://secure.nrdconline.org/site/Donation2?df_id=15743&15743.donation=form1",
 		"logo_img_src": "img/nrdc.png",
 		"keywords": ["national", "resources", "defense", "council", "nrdc", "environment", "climate"]
+	},
+	//*** ----- ***//
+	{
+		"name": "Cancer Research Institute",
+		"donation_url": "https://www.cancerresearch.org/we-are-cri/join-the-cause/donations/one-time-donation",
+		"logo_img_src": "img/cri.png",
+		"keywords": ["cancerresearch", "cancer", "research", "institute", "cri", "health", "illness"]
+	},
+	{
+		"name": "African Wildlife Foundation",
+		"donation_url": "https://secure.awf.org/support-african-wildlife-foundation",
+		"logo_img_src": "img/awf.png",
+		"keywords": ["african", "wildlife", "foundation", "awf", "animals", "environment", "nature"]
+	},
+	{
+		"name": "Animal Welfare Institute",
+		"donation_url": "https://awionline.org/content/make-donation-awi",
+		"logo_img_src": "img/awi.png",
+		"keywords": ["animal", "welfare", "institute", "awi", "nature", "environment"]
+	},
+	{
+		"name": "Center for Community Change",
+		"donation_url": "https://join.communitychange.org/page/contribute/donate-now-center-for-community-change",
+		"logo_img_src": "img/ccc.png",
+		"keywords": ["center", "community", "change", "ccc", "humanitarian"]
+	},
+	{
+		"name": "Fund for Global Human Rights",
+		"donation_url": "https://salsa4.salsalabs.com/o/51404/donate_page/donate-today",
+		"logo_img_src": "img/fghr.png",
+		"keywords": ["fund", "global", "human", "rights", "fghr", "humanitarian"]
+	},
+	{
+		"name": "Environmental Defense Fund",
+		"donation_url": "https://secure2.edf.org/site/Donation2?df_id=18325&18325.donation=form1",
+		"logo_img_src": "img/edf.png",
+		"keywords": ["environmental", "defense", "fund", "edf", "environment", "nature"]
+	},
+	{
+		"name": "Foundation for Individ. Rights in Education",
+		"donation_url": "https://www.thefire.org/donate/",
+		"logo_img_src": "img/fire.png",
+		"keywords": ["foundation", "individual", "rights", "education", "fire", "school"]
+	},
+	{
+		"name": "American Foundation for Suicide Prevention",
+		"donation_url": "https://afsp.org/take-action/give-a-gift/",
+		"logo_img_src": "img/afsp.png",
+		"keywords": ["american", "foundation", "suicide", "prevention", "mental", "health", "illness"]
+	},
+	{
+		"name": "United Service Organizations",
+		"donation_url": "https://secure.uso.org/scc-2/?sc=WEBDONATE&show_amount=true",
+		"logo_img_src": "img/uso.png",
+		"keywords": ["united", "service", "organizations", "uso", "veterans", "military"]
 	}
 ];
 
