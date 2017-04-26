@@ -14,51 +14,19 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-		<style>
-			body {
-				padding-bottom: 0.5em;
-			}
-
-			.linkIcon {
-				width: 4.5em;
-				height: 4.5em;
-				cursor: pointer;
-				border-radius: 0.25em;
-				padding: 0.25em;
-			}
-			.linkIcon:hover {
-				border: 0.1em solid #BBB;
-			}
-
-			.linkContainer {
-				margin-top: 0.5em;
-			}
-
-			#pageTitle {
-				font-family: "Indie Flower", cursive;
-				font-size: 1.75em;
-				font-weight: bold;
-				margin: 0.25;
-				padding-left: 0.75em;
-				padding-top: 0.25em;
-			}
-
-			.row {
-				width: 20em;
-			}
-
-			#query {
-				width: 80%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-		</style>
+		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
 				<div id="pageTitle">Give Back to the World!</div>
+				<hr id="title_break">
 				<input id="query" class="form-control" type="text" placeholder="Search for organizations..." />
+			</div>
+			<div id="no_results" class="panel panel-default">
+				<div id="no_results_body" class="panel-body">
+					<span id="no_results_text"><em><small>No results found.</small></em></span>
+				</div>
 			</div>
 			<div class="row">
 				<div id="link-top-left" class="col-xs-4 linkContainer">
@@ -95,6 +63,7 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="functions.js"></script>
+		<script type="text/javascript" src="scripts/constants.js"></script>
+		<script type="text/javascript" src="scripts/functions.js"></script>
 	</body>
 </html>

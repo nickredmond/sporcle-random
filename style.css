@@ -1,0 +1,60 @@
+body {
+	padding-bottom: 0.5em;
+}
+
+.linkIcon {
+	width: 4.5em;
+	height: 4.5em;
+	cursor: pointer;
+	border-radius: 0.25em;
+	padding: 0.25em;
+}
+.linkIcon:hover {
+	border: 0.1em solid #BBB;
+}
+
+.linkContainer {
+	margin-top: 0.5em;
+}
+
+#pageTitle {
+	font-family: "Indie Flower", cursive;
+	font-size: 1.75em;
+	font-weight: bold;
+	margin: 0.25;
+	padding-left: 0.75em;
+	padding-top: 0.25em;
+}
+
+.row {
+	width: 20em;
+}
+
+#query {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#no_results_text {
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #555;
+}
+#no_results_body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+#no_results {
+	visibility: hidden;
+	display: none;
+	margin: 1em;
+	background-color: #EEE;
+}
+
+#title_break {
+	width: 90%;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
