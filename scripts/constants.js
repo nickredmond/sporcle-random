@@ -76,7 +76,7 @@ var ALL_ORGANIZATIONS = [
 		"name": "Foundation for Individ. Rights in Education",
 		"donation_url": "https://www.thefire.org/donate/",
 		"logo_img_src": "img/fire.png",
-		"keywords": ["foundation", "individual", "rights", "education", "fire", "school"]
+		"keywords": ["foundation", "individual", "rights", "education", "fire", "school", "liberty"]
 	},
 	{
 		"name": "American Foundation for Suicide Prevention",
@@ -88,7 +88,37 @@ var ALL_ORGANIZATIONS = [
 		"name": "United Service Organizations",
 		"donation_url": "https://secure.uso.org/scc-2/?sc=WEBDONATE&show_amount=true",
 		"logo_img_src": "img/uso.png",
-		"keywords": ["united", "service", "organizations", "uso", "veterans", "military"]
+		"keywords": ["united", "service", "organizations", "uso", "veterans", "military", "armed", "forces"]
+	},
+	{
+		"name": "Wounded Warrior Project",
+		"donation_url": "https://support.woundedwarriorproject.org",
+		"logo_img_src": "img/wounded-warrior.png",
+		"keywords": ["wounded", "warrior", "project", "wwp", "veterans", "military", "armed", "forces"]
+	},
+	{
+		"name": "Int'l Coalition for Religious Freedom",
+		"donation_url": "http://www.religiousfreedom.com/index.php?option=com_jdonation",
+		"logo_img_src": "img/religious-freedom.png",
+		"keywords": ["international", "coalition", "religious", "freedom", "religion", "civil", "rights", "liberty"]
+	},
+	{
+		"name": "Books from Birth",
+		"donation_url": "https://www.booksfrombirth.org/donate",
+		"logo_img_src": "img/booksfrombirth.png",
+		"keywords": ["books", "from", "birth", "education", "community", "dolly", "parton", "imagination", "library"]
+	},
+	{
+		"name": "YMCA of the USA",
+		"donation_url": "https://secure2.convio.net/ymca/site/Donation2?df_id=2261&2261.donation=form1",
+		"logo_img_src": "img/ymca.png",
+		"keywords": ["ymca", "usa", "young", "men", "christian", "association", "community", "children", "humanitarian"]
+	},
+	{
+		"name": "American Foundation for Children with AIDS",
+		"donation_url": "https://www.givedirect.org/donate/?cid=8499",
+		"logo_img_src": "img/afcaids.png",
+		"keywords": ["american", "foundation", "children", "aids", "afcaids", "hiv", "illness", "health"]
 	}
 ];
 
