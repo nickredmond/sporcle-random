@@ -53,17 +53,29 @@ function onResultsFound(isHidden) {
 		label.style.display = "block";
 	}
 }
+
+var currentQueryKeyword = "all";
 function filterOrganizationsByKeyword(query) {
 	filterResults = [];
 	ALL_ORGANIZATIONS.forEach(function(organization){
 		var numKeywordsMatched = 0;
+		var isQueryKeywordMatched = false;
 		organization["keywords"].forEach(function(keyword){
 			query = query.toLowerCase();
 			keyword = keyword.toLowerCase();
 			if (query.indexOf(keyword) >= 0 || keyword.indexOf(query) >= 0){
 				numKeywordsMatched += 1;
 			}
+			if (keyword.indexOf(currentQueryKeyword) >= 0 || currentQueryKeyword.indexOf(keyword) >= 0){
+				isQueryKeywordMatched = true;
+				numKeywordsMatched += 1;
+			}
 		});
+		if ((currentQueryKeyword !== "all" && isQueryKeywordMatched === false) ||
+				(currentQueryKeyword !== "all" && isQueryKeywordMatched === true && query !== "" && 
+					query !== null && numKeywordsMatched === 1)) {
+			numKeywordsMatched = -1000;
+		}
 		filterResults.push({
 			"orgName": organization["name"], 
 			"matches": numKeywordsMatched
@@ -96,6 +108,7 @@ function filterOrganizationsByKeyword(query) {
 
 var previousCategoryImgSrc = "img/categories/all.png";
 var isCategoriesVisible = false;
+
 function onSelectingCategory(isSelectingCategory) {
 	var img = document.getElementById("category_selected_img");
 	var img_src = previousCategoryImgSrc;
@@ -142,5 +155,16 @@ document.getElementById("category_selected_btn").addEventListener("click", funct
 });
 document.getElementById("cancel_btn").addEventListener("click", function(){
 	onSettingCategoriesVisible(false);
+});
+document.querySelectorAll(".category_link > a").forEach(function(anchor){
+	var keyword = anchor.getAttribute("keyword");
+	anchor.addEventListener("click", function(){
+		currentQueryKeyword = keyword;
+		var query = document.getElementById("query").value;
+		filterOrganizationsByKeyword(query);
+		document.getElementById("category_selected_img")
+			.setAttribute("src", "img/categories/" + keyword + ".png");
+		onSettingCategoriesVisible(false);
+	});
 });
 populateOrgLinks(DEFAULT_ORGANIZATIONS);
