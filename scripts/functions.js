@@ -95,6 +95,7 @@ function filterOrganizationsByKeyword(query) {
 }
 
 var previousCategoryImgSrc = "img/categories/all.png";
+var isCategoriesVisible = false;
 function onSelectingCategory(isSelectingCategory) {
 	var img = document.getElementById("category_selected_img");
 	var img_src = previousCategoryImgSrc;
@@ -105,6 +106,27 @@ function onSelectingCategory(isSelectingCategory) {
 
 	img.setAttribute("src", img_src);
 }
+function onSettingCategoriesVisible(isVisible) {
+	isCategoriesVisible = !isCategoriesVisible;
+	if (isVisible) {
+		document.getElementById("categories").style.visibility = "visible";
+		document.querySelector("#categories > table").style.display = "block";
+		document.getElementById("categories").style.height = "auto";
+
+		document.getElementById("charities").style.visibility = "hidden";
+		document.getElementById("charities").style.display = "none";
+		document.getElementById("charities").style.height = "0";
+	}
+	else {
+		document.getElementById("categories").style.visibility = "hidden";
+		document.querySelector("#categories > table").style.display = "none";
+		document.getElementById("categories").style.height = "0";
+
+		document.getElementById("charities").style.visibility = "visible";
+		document.getElementById("charities").style.display = "block";
+		document.getElementById("charities").style.height = "auto";
+	}
+}
 
 document.getElementById("query").addEventListener("input", function(){
 	filterOrganizationsByKeyword(this.value);
@@ -114,5 +136,11 @@ document.getElementById("category_selected_btn").addEventListener("mouseenter", 
 });
 document.getElementById("category_selected_btn").addEventListener("mouseleave", function(){
 	onSelectingCategory(false);
+});
+document.getElementById("category_selected_btn").addEventListener("click", function(){
+	onSettingCategoriesVisible(true);
+});
+document.getElementById("cancel_btn").addEventListener("click", function(){
+	onSettingCategoriesVisible(false);
 });
 populateOrgLinks(DEFAULT_ORGANIZATIONS);

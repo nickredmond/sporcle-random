@@ -54,9 +54,12 @@ body {
 }
 
 #categories {
+	height: 0;
 	visibility: hidden;
-	display: : none;
-	background-color: #FFFEEE;
+	background-color: #FCFCFC;
+}
+#categories > table {
+	display: none;
 }
 .linkIcon {
 	width: 4.5em;
@@ -84,4 +87,53 @@ body {
 #search_form {
     margin-left: 1.25em;
     margin-right: 1.25em;
+}
+
+#categories_header {
+	font-size: 1.5em;
+    width: 5em;
+    padding: 0;
+    margin: 0.5em auto 0.25em auto;
+    font-family: "Indie FLower", cursive;
+    font-style: italic;
+    font-weight: bold;
+}
+#categories_hr {
+    width: 90%;
+    margin: 0.5em auto;
+}
+
+/*.category_link > a > img {
+	height: 2em;
+	width: auto;
+	margin-right: 0.5em;
+}
+.category_link > a:hover {
+	cursor: pointer;
+}
+*/
+
+.category_link {
+	padding: 0.5em;
+}
+.category_link > a:hover {
+	cursor: pointer;
+}
+.category_img_container {
+    width: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.category_img_container > img {
+	width: 3em;
+}
+.category_txt_container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.1em;
+}
+
+#cancel_btn_container {
+	width: 20%;
+	margin-left: 35%;
 }
