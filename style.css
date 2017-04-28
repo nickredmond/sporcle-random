@@ -30,12 +30,6 @@ body {
 	width: 20em;
 }
 
-#query {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 #no_results_text {
 	font-size: 1.25em;
 	font-weight: bold;
@@ -57,4 +51,37 @@ body {
 	width: 90%;
 	margin-top: 0;
 	margin-bottom: 1em;
+}
+
+#categories {
+	visibility: hidden;
+	display: : none;
+	background-color: #FFFEEE;
+}
+.linkIcon {
+	width: 4.5em;
+	height: 4.5em;
+	cursor: pointer;
+	/*border-radius: 0.25em;*/
+	padding: 0.25em;
+	text-decoration: underline;
+}
+.linkIcon:hover {
+	text-decoration: none;
+}
+
+#category_selected_img {
+	height: 2.25em;
+	width: auto;
+}
+#category_selected_btn {
+    height: 2.45em;
+    width: auto;
+    padding: 0;
+    background-color: black;
+    background-image: none;
+}
+#search_form {
+    margin-left: 1.25em;
+    margin-right: 1.25em;
 }

@@ -94,7 +94,25 @@ function filterOrganizationsByKeyword(query) {
 	}
 }
 
+var previousCategoryImgSrc = "img/categories/all.png";
+function onSelectingCategory(isSelectingCategory) {
+	var img = document.getElementById("category_selected_img");
+	var img_src = previousCategoryImgSrc;
+	if (isSelectingCategory) {
+		previousCategoryImgSrc = img.getAttribute("src");
+		img_src = "img/categories/open_categories.png";
+	}
+
+	img.setAttribute("src", img_src);
+}
+
 document.getElementById("query").addEventListener("input", function(){
 	filterOrganizationsByKeyword(this.value);
+});
+document.getElementById("category_selected_btn").addEventListener("mouseenter", function(){
+	onSelectingCategory(true);
+});
+document.getElementById("category_selected_btn").addEventListener("mouseleave", function(){
+	onSelectingCategory(false);
 });
 populateOrgLinks(DEFAULT_ORGANIZATIONS);
