@@ -52,7 +52,7 @@ var ALL_ORGANIZATIONS = [
 		"name": "Animal Welfare Institute",
 		"donation_url": "https://awionline.org/content/make-donation-awi",
 		"logo_img_src": "img/awi.png",
-		"keywords": ["animal", "welfare", "institute", "awi", "nature", "environment"]
+		"keywords": ["animals", "welfare", "institute", "awi", "nature", "environment"]
 	},
 	{
 		"name": "Center for Community Change",
@@ -119,6 +119,66 @@ var ALL_ORGANIZATIONS = [
 		"donation_url": "https://www.givedirect.org/donate/?cid=8499",
 		"logo_img_src": "img/afcaids.png",
 		"keywords": ["american", "foundation", "children", "aids", "afcaids", "hiv", "illness", "health"]
+	},
+	{
+		"name": "Donors Choose",
+		"donation_url": "https://www.donorschoose.org/donors/search.html",
+		"logo_img_src": "img/donors-choose.png", 
+		"keywords": ["donors", "choose", "education"]
+	},
+	{
+		"name": "Semper Fi Fund",
+		"donation_url": "https://semperfifund.org/donate/",
+		"logo_img_src": "img/semper-fi.png",
+		"keywords": ["injured", "marine", "semper", "fi", "fund", "semper-fi", "military", "veterans"]
+	},
+	{
+		"name": "Campaign for Tobacco-Free Kids",
+		"donation_url": "https://ne.salsalabs.com/o/501/p/salsa/donation/common/public/?donate_page_KEY=7055",
+		"logo_img_src": "img/ctfk.png",
+		"keywords": ["campaign", "tobacco", "free", "kids", "tobacco-free", "health", "children"]
+	},
+	{
+		"name": "St. Jude Children's Research Hospital",
+		"donation_url": "https://shop.stjude.org/GiftCatalog/donation.do?cID=14262&pID=24671",
+		"logo_img_src": "img/st-jude.png",
+		"keywords": ["st", "st.", "saint", "jude", "children's", "research", "hospital", "health", "illness", "children"]
+	},
+	{
+		"name": "Wildlife Conservation Society",
+		"donation_url": "https://secure3.convio.net/wcs/site/Donation2?_ga=1.47958575.922992306.1493425166&9342.donation=form1&df_id=9342&donation=form1",
+		"logo_img_src": "img/wcs.png",
+		"keywords": ["wildlife", "conservation", "society", "wcs", "animals", "global", "international"]
+	},
+	{
+		"name": "Nat'l Center for Transgender Equality",
+		"donation_url": "https://salsa4.salsalabs.com/o/51171/p/salsa/donation/common/public/?donate_page_KEY=8966",
+		"logo_img_src": "img/ncte.png",
+		"keywords": ["national", "center", "transgender", "equality", "rights", "ncte", "lgbtq"]
+	},
+	{
+		"name": "Free2Be",
+		"donation_url": "http://free2be.org/donate",
+		"logo_img_src": "img/free-2-be.png",
+		"keywords": ["free2be", "free", "to", "be", "lgbtq"]
+	},
+	{
+		"name": "UNICEF",
+		"donation_url": "https://donate.unicef.org/donate/now",
+		"logo_img_src": "img/unicef.png",
+		"keywords": ["unicef", "united", "nations", "children's", "fund", "children", "international", "humanitarian"]
+	},
+	{
+		"name": "Catholic League for Religious & Civil Rights",
+		"donation_url": "http://www.catholicleague.org/product/donation/",
+		"logo_img_src": "img/clrcr.png",
+		"keywords": ["catholic", "league", "religious", "civil", "rights", "clrcr", "religion", "church"]
+	},
+	{
+		"name": "Save the Children",
+		"donation_url": "https://secure.savethechildren.org/site/c.8rKLIXMGIpI4E/b.6239401/k.C01C/Global_Action_Fund/apps/ka/sd/donor.asp",
+		"logo_img_src": "img/save-the-children.png",
+		"keywords": ["save", "the", "children", "education"]
 	}
 ];
 
