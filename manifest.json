@@ -1,17 +1,17 @@
 {
 "update_url": "https://clients2.google.com/service/update2/crx",
 
-	"name": "We Stand United",
-	"description": "What's one good way to take down Trumpism? Giving back to those who can help.",
+	"name": "Sporcle Launcher",
+	"description": "Quickly open random quiz or search query.",
 	"omnibox": {
-		"keyword": "united"
+		"keyword": "sporcle"
 	},
 	"icons": {
 		"16": "img/icons/icon.png",
 		"48": "img/icons/extensionIcon.png",
 		"128": "img/icons/webStoreIcon.png"
 	},
-	"version": "1.2.0",
+	"version": "1.0.0",
 	"permissions": [
 		"activeTab",
 		"https://fonts.googleapis.com/",
@@ -19,7 +19,7 @@
 	],
 	
 	"browser_action": {
-		"default_title": "We Stand United",
+		"default_title": "Sporcle Launcher",
 		"default_icon": "img/icons/webStoreIcon.png",
 		"default_popup": "index.html"
 	},

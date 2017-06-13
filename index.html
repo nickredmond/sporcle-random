@@ -19,138 +19,33 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div id="pageTitle">Give Back to the World!</div>
+				<div id="pageTitle">take a quiz!</div>
 				<hr id="title_break">
+				<a id="randomQuizButton" class="btn" href="https://www.sporcle.com/games/random.php" target="_blank"
+					style="
+						background-image: -webkit-linear-gradient(top,#FFB838 0,#FF7326 100%);
+					    background-image: -o-linear-gradient(top,#FFB838 0,#FF7326 100%);
+					    background-image: -webkit-gradient(linear,left top,left bottom,from(#FFB838),to(#FF7326));
+					    background-image: linear-gradient(to bottom,#FFB838 0,#FF7326 100%);
+					    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+					    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+					    background-repeat: repeat-x;
+					    border-color: #E34101;
+					">Random Quiz</a>
+			</div>
+			<div id="search-row" class="row">
+				<div id="pageTitle">search for quizzes...</div>
+				<hr id="title_break">
+				<div id="emptyQueryWarning" style="display: none;" class="alert alert-danger" role="alert">
+					<strong>Oops!</strong>&nbsp;You must enter search text before visiting Sporcle.
+				</div>
 				<div id="search_form" class="input-group">
-					<input id="query" class="form-control" type="text" placeholder="Search for organizations..." />
+					<input id="query" class="form-control" type="text" placeholder="Type in name or keywords..." />
 					<span class="input-group-btn">
-						<button id="category_selected_btn" class="btn btn-default" type="button">
-							<img id="category_selected_img" src="img/categories/all.png" />
-						</button>
-					</span>
-				</div>
-			</div>
-			<div id="no_results" class="panel panel-default">
-				<div id="no_results_body" class="panel-body">
-					<span id="no_results_text"><em><small>No results found.</small></em></span>
-				</div>
-			</div>
-			<div id="categories" class="row">
-				<h3 id="categories_header">Categories:</h3>
-				<hr id="categories_hr">
-				<table>
-					<tr>
-						<td class="category_link">
-							<a keyword="all">
-								<div class="category_img_container"><img src="img/categories/all.png" /></div>
-								<div id="" class="category_txt_container" style="width: 1em;">all</div>
-							</a>
-						</td>
-						<td class="category_link">
-							<a keyword="education">
-								<div class="category_img_container"><img src="img/categories/education.png" /></div>
-								<div id="" class="category_txt_container">education</div>
-							</a>
-						</td><td class="category_link">
-							<a keyword="health">
-								<div class="category_img_container"><img src="img/categories/health.png" /></div>
-								<div id="" class="category_txt_container" style="width: 2.75em;">health</div>
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="category_link">
-							<a keyword="environment">
-								<div class="category_img_container"><img src="img/categories/environment.png" /></div>
-								<div id="" class="category_txt_container">environment</div>
-							</a>
-						</td><td class="category_link">
-							<a keyword="animals">
-								<div class="category_img_container"><img src="img/categories/animals.png" /></div>
-								<div id="" class="category_txt_container" style="width: 3.5em;">animals</div>
-							</a>
-						</td><td class="category_link">
-							<a keyword="humanitarian">
-								<div class="category_img_container"><img src="img/categories/humanitarian.png" /></div>
-								<div id="" class="category_txt_container">humanitarian</div>
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="category_link">
-							<a keyword="veterans">
-								<div class="category_img_container"><img src="img/categories/veterans.png" /></div>
-								<div id="" class="category_txt_container" style="width: 4em;">veterans</div>
-							</a>
-						</td><td class="category_link">
-							<a keyword="religion">
-								<div class="category_img_container"><img src="img/categories/religion.png" /></div>
-								<div id="" class="category_txt_container" style="width: 3.25em;">religion</div>
-							</a>
-						</td><td class="category_link">
-							<a keyword="children">
-								<div class="category_img_container"><img src="img/categories/children.png" /></div>
-								<div id="" class="category_txt_container" style="width: 3.5em;">children</div>
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="category_link">
-							<a keyword="">
-								<div class="category_img_container"></div>
-								<div id="" class="category_txt_container"></div>
-							</a>
-						</td><td class="category_link">
-							<a keyword="lgbtq">
-								<div class="category_img_container"><img src="img/categories/lgbtq.png" /></div>
-								<div id="" class="category_txt_container" style="width: 3.25em;">LGBTQ</div>
-							</a>
-						</td><td class="category_link">
-							<a keyword="">
-								<div class="category_img_container"></div>
-								<div id="" class="category_txt_container"></div>
-							</a>
-						</td>
-					</tr>
-				</table>
-				<div id="cancel_btn_container">
-					<button id="cancel_btn" class="btn btn-danger">Cancel</button>
-				</div>
-			</div>
-			<div id="charities">
-				<div class="row">
-					<div id="link-top-left" class="col-xs-4 linkContainer">
-						<a target="_blank" data-toggle="tooltip">
-							<img class="linkIcon" />
-						</a> 
-					</div>
-					<div id="link-top-center" class="col-xs-4 linkContainer">
-						<a target="_blank" data-toggle="tooltip">
-							<img class="linkIcon" />
-						</a> 
-					</div>
-					<div id="link-top-right" class="col-xs-4 linkContainer">
-						<a target="_blank" data-toggle="tooltip">
-							<img class="linkIcon" />
-						</a> 
-					</div>
-				</div>
-				<div class="row">
-					<div id="link-bottom-left" class="col-xs-4 linkContainer">
-						<a target="_blank" data-toggle="tooltip">
-							<img class="linkIcon" />
-						</a> 
-					</div>
-					<div id="link-bottom-center" class="col-xs-4 linkContainer">
-						<a target="_blank" data-toggle="tooltip">
-							<img class="linkIcon" />
-						</a> 
-					</div>
-					<div id="link-bottom-right" class="col-xs-4 linkContainer">
-						<a target="_blank" data-toggle="tooltip">
-							<img class="linkIcon" />
-						</a> 
-					</div>
+				        <button id="search-button" class="btn btn-default" type="button">
+				        	<span class="glyphicon glyphicon-search"></span>
+				        </button>
+				      </span>
 				</div>
 			</div>
 		</div>
