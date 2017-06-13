@@ -82,3 +82,7 @@ body {
 #randomQuizButton:hover {
 	text-decoration: underline;
 }
+
+#emptyQueryWarning {
+	margin: 1em;
+}
